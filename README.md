@@ -9,9 +9,15 @@ For Ubuntu 14.04, just install golang metapackage
 
     sudo apt-get install golang
 
-## Ctrl + C stuff
+Any text editor will work. 
 
-Just run and exit
+## (Simple) Crash Course about how to compile
+
+
+### hello example
+
+Just run the code (compile, execute and discart binary)
+
     go run hello.go
 
 Make executable
@@ -20,3 +26,6 @@ Make executable
 
     # Cross compile, from Linux x64 to Windows Win32
     GOARCH=386 GOOS=windows go build -o hello.exe hello.go
+
+
+    

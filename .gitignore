@@ -4,3 +4,5 @@ RemoteSystemsTempFiles
 
 *.exe
 hello/hello
+http-server-hello/http-server-hello
+http-server-hello/http-server-hello.exe
