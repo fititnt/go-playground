@@ -1,16 +1,16 @@
 package main
 
 import (
-    "fmt"
-    "net/http"
-    "io/ioutil"
-    //"encoding/json"
+	"fmt"
+	"net/http"
+	"io/ioutil"
+	//"encoding/json"
 )
 
 func panico(err error) {
-    if err != nil {
-        panic(err)
-    }
+	if err != nil {
+		panic(err)
+	}
 }
 
 func main() {
@@ -18,10 +18,10 @@ func main() {
 	
 	res, err := http.Get(url)
 	panico(err)
-    defer res.Body.Close()
-    body, err := ioutil.ReadAll(res.Body)
-    panico(err)
-    
-    fmt.Printf("%s\n", body)
+	defer res.Body.Close()
+	body, err := ioutil.ReadAll(res.Body)
+	panico(err)
+
+	fmt.Printf("%s\n", body)
 	// ...
 }
